@@ -1,0 +1,24 @@
+{
+  "name": "humane-society",
+  "version": "1.0.0",
+  "description": "A WordPress theme for the Humane Society of New Zealand",
+  "main": "index.php",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/forrest-wilson/yb-cms-summative-humane-society.git"
+  },
+  "keywords": [
+    "PHP",
+    "Wordpress",
+    "Theme"
+  ],
+  "author": "Forrest Wilson-Jennings",
+  "license": "GPL-2.0",
+  "bugs": {
+    "url": "https://github.com/forrest-wilson/yb-cms-summative-humane-society/issues"
+  },
+  "homepage": "https://github.com/forrest-wilson/yb-cms-summative-humane-society#readme"
+}
