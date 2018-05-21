@@ -132,12 +132,12 @@ function humane_society_scripts() {
 
 	// Custom CSS Enqueueing
 	wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/node_modules/bootstrap/dist/css/bootstrap.min.css', array(), '4.1.1' );
-	wp_enqueue_style( 'custom-css', get_template_directory_uri() . '/assets/stylesheets/css/style.css', array(), '1.0.0' );
+	wp_enqueue_style( 'custom', get_template_directory_uri() . '/assets/stylesheets/css/style.css', array(), '1.0.0' );
 
 	// Custom JS Enqueueing
 	wp_enqueue_script( 'jq', get_template_directory_uri() . '/node_modules/jquery/dist/jquery.min.js', array(), '3.3.1' );
 	wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/node_modules/bootstrap/dist/js/bootstrap.min.js', array(), '4.1.1' );
-	wp_enqueue_script( 'custom-js', get_template_directory_uri() . '/assets/scripts/app.min.js', array(), '1.0.0' );
+	wp_enqueue_script( 'custom', get_template_directory_uri() . '/assets/scripts/app.min.js', array(), '1.0.0' );
 }
 add_action( 'wp_enqueue_scripts', 'humane_society_scripts' );
 
