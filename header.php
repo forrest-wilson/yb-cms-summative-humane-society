@@ -26,6 +26,27 @@
 
 	<header id="masthead" class="site-header">
 		<?php get_template_part('template-parts/header', 'nav'); ?>
-	</header><!-- #masthead -->
+	</header>
+
+	<?php if (has_header_image()) : ?>
+
+	<section class="jumbotron jumbotron-fluid feature-image" style="background-image: url('<?php echo get_header_image(); ?>');">
+
+	<?php else : ?>
+	
+	<section class="jumbotron jumbotron-fluid feature-image feature-image-default">
+
+	<?php endif; ?>
+
+		<div class="opaque-cover"></div>
+		<div class="container">
+		<?php if (is_home() || is_front_page()) : ?>
+			<h1><?php echo bloginfo('name'); ?></h1>
+			<h3><?php echo bloginfo('description'); ?></h3>
+		<?php else : ?>
+			<h1><?php echo the_title(); ?></h1>
+		<?php endif ?>
+		</div>
+	</section>
 
 	<div id="content" class="site-content">
