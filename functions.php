@@ -170,3 +170,33 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 
 // Register Custom Navigation Walker
 require_once get_template_directory() . '/class-wp-bootstrap-navwalker.php';
+
+// Custom Post Types
+function create_post_types() {
+	register_post_type( 'cats-for-adoption', array(
+		'labels' => array(
+			'name' => __( 'Cat Adoptions' ),
+			'singular_name' => __( 'Cat Adoption' )
+		),
+		'public' => true,
+		'has_archive' => false
+	) );
+
+	register_post_type( 'dogs-for-adoption', array(
+		'labels' => array(
+			'name' => __( 'Dog Adoptions' ),
+			'singular_name' => __( 'Dog Adoption' )
+		),
+		'public' => true,
+		'has_archive' => false
+	) );
+}
+
+add_action( 'init', 'create_post_types' );
+
+function rewrite_flush() {
+	create_post_types();
+	flush_rewrite_rules();
+}
+
+add_action('after_switch_theme', 'rewrite_flush');
