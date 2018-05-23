@@ -1,3 +1,11 @@
+blockquote {
+  border-top: 1px solid lightgrey;
+  border-bottom: 1px solid lightgrey;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-top: 30px;
+  margin-bottom: 30px; }
+
 .navbar-brand .animal-sketch {
   display: none; }
 
@@ -43,6 +51,26 @@
   .jumbotron {
     padding-top: 125px;
     padding-bottom: 125px; } }
+
+.widget-area {
+  padding: 10px;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  position: relative; }
+
+.widget ul {
+  list-style-type: none;
+  padding-left: 10px;
+  padding-right: 10px; }
+
+.widget-title {
+  font-size: 24px; }
+
+.widget_search .search-form .search-field,
+.widget_search .search-form .search-submit,
+.widget_search .search-form label {
+  width: 100%; }
 
 .site-footer .site-info {
   padding: 50px 0;

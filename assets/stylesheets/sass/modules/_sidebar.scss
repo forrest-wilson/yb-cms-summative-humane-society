@@ -1,0 +1,29 @@
+//**** Sidebar Styles ****//
+
+.widget-area {
+    padding: 10px;
+    border: $greyBorder;
+    border-radius: $borderRadius;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.widget ul {
+    list-style-type: none;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.widget-title {
+    font-size: 24px;
+}
+
+.widget_search {
+    .search-form {
+        .search-field,
+        .search-submit,
+        label {
+            width: 100%;
+        }
+    }
+}
