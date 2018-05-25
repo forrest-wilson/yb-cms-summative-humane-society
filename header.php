@@ -43,9 +43,11 @@
 		<?php if (is_home() || is_front_page()) : ?>
 			<h1><?php echo bloginfo('name'); ?></h1>
 			<h3><?php echo bloginfo('description'); ?></h3>
+		<?php elseif (is_search()) : ?>
+			<h1><?php printf( esc_html__( 'Search Results for: %s', 'humane-society' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
 		<?php else : ?>
 			<h1><?php echo the_title(); ?></h1>
-		<?php endif ?>
+		<?php endif; ?>
 		</div>
 	</section>
 
