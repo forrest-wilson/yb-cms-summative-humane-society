@@ -1,5 +1,5 @@
 //**** Search Results Styles ****//
 
-.hentry {
+.hentry:not(:last-child) {
     border-bottom: $greyBorder;
 }
