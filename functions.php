@@ -179,7 +179,8 @@ function create_post_types() {
 			'singular_name' => __( 'Cat Adoption' )
 		),
 		'public' => true,
-		'has_archive' => false
+		'has_archive' => false,
+		'supports' => array('title', 'editor', 'thumbnail')
 	) );
 
 	register_post_type( 'dogs-for-adoption', array(
@@ -188,7 +189,8 @@ function create_post_types() {
 			'singular_name' => __( 'Dog Adoption' )
 		),
 		'public' => true,
-		'has_archive' => false
+		'has_archive' => false,
+		'supports' => array('title', 'editor', 'thumbnail')
 	) );
 }
 
