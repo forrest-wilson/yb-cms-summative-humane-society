@@ -77,4 +77,7 @@ blockquote {
   background-color: #014282;
   color: white; }
 
+.hentry {
+  border-bottom: 1px solid lightgrey; }
+
 /*# sourceMappingURL=style.css.map */
