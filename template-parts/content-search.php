@@ -23,7 +23,13 @@
 		<?php endif; ?>
 	</header><!-- .entry-header -->
 
-	<?php humane_society_post_thumbnail(); ?>
+	<?php
+		$type = $post->post_type;
+
+		if ($type == 'cats-for-adoption' || $type == 'dogs-for-adoption') {
+			humane_society_post_thumbnail();
+		}
+	?>
 
 	<div class="entry-summary">
 		<?php the_excerpt(); ?>
