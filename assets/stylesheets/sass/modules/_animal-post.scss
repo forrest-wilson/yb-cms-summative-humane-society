@@ -1,0 +1,29 @@
+.animal hr {
+    width: 100%!important;
+}
+
+.animal-post {
+    display: flex;
+}
+
+.animal-title > *{
+    vertical-align: middle;
+}
+
+.animal-thumbnail {
+    margin-right: 10px;
+    flex-shrink: 0;
+
+    img {
+        width: 175px;
+    }
+}
+
+.animal-info {
+    display: inline-block;
+    flex-grow: 1;
+
+    p:not(:last-of-type) {
+        margin-bottom: 0;
+    }
+}
