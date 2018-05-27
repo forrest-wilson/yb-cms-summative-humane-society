@@ -1,0 +1,24 @@
+.coupon {
+    .input-text {
+        width: auto !important;
+    }
+}
+
+.woocommerce-checkout {
+    #customer_details {
+        .col-1, .col-2 {
+            flex: auto;
+            max-width: 100%;
+        }
+
+        .form-row,
+        & label,
+        & span {
+            width: 100%;
+        }
+
+        .select2-selection__arrow {
+            width: 20px;
+        }
+    }
+}

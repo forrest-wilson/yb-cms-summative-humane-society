@@ -106,4 +106,21 @@ blockquote {
   .animal-info p:not(:last-of-type) {
     margin-bottom: 0; }
 
+.coupon .input-text {
+  width: auto !important; }
+
+.woocommerce-checkout #customer_details .col-1, .woocommerce-checkout #customer_details .col-2 {
+  -webkit-box-flex: 1;
+  -ms-flex: auto;
+  flex: auto;
+  max-width: 100%; }
+
+.woocommerce-checkout #customer_details .form-row,
+.woocommerce-checkout #customer_details label,
+.woocommerce-checkout #customer_details span {
+  width: 100%; }
+
+.woocommerce-checkout #customer_details .select2-selection__arrow {
+  width: 20px; }
+
 /*# sourceMappingURL=style.css.map */
