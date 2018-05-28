@@ -86,7 +86,11 @@ blockquote {
 .animal-post {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
 
 .animal-title > * {
   vertical-align: middle; }
@@ -105,6 +109,18 @@ blockquote {
   flex-grow: 1; }
   .animal-info p:not(:last-of-type) {
     margin-bottom: 0; }
+
+.view-animal-adoption-button {
+  width: 100%; }
+
+@media screen and (min-width: 768px) {
+  .animal-post {
+    -webkit-box-orient: initial;
+    -webkit-box-direction: initial;
+    -ms-flex-direction: initial;
+    flex-direction: initial; }
+  .view-animal-adoption-button {
+    width: auto; } }
 
 .coupon .input-text {
   width: auto !important; }

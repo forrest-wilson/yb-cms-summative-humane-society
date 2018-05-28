@@ -4,6 +4,7 @@
 
 .animal-post {
     display: flex;
+    flex-direction: column;
 }
 
 .animal-title > *{
@@ -25,5 +26,19 @@
 
     p:not(:last-of-type) {
         margin-bottom: 0;
+    }
+}
+
+.view-animal-adoption-button {
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    .animal-post {
+        flex-direction: initial;
+    }
+
+    .view-animal-adoption-button {
+        width: auto;
     }
 }

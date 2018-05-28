@@ -39,7 +39,7 @@
                     <p><strong>Age: </strong><?php echo $age; ?></p>
                     <p><strong>Sex: </strong><?php echo $sex; ?></p>
                     <p><strong>Breed: </strong><?php echo $breed; ?></p>
-                    <a href="<?php echo get_post_permalink($post); ?>" role="button" class="btn btn-primary">See More</a>
+                    <a href="<?php echo get_post_permalink($post); ?>" role="button" class="btn btn-primary view-animal-adoption-button">See More</a>
                 </div>
             </div>
             <hr>
