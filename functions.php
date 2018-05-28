@@ -178,7 +178,8 @@ function create_post_types() {
 		),
 		'public' => true,
 		'has_archive' => false,
-		'supports' => array('title', 'editor', 'thumbnail')
+		'supports' => array('title', 'editor', 'thumbnail'),
+		'taxonomies' => array('category', 'post_tag')
 	) );
 
 	register_post_type( 'dogs-for-adoption', array(
@@ -188,7 +189,8 @@ function create_post_types() {
 		),
 		'public' => true,
 		'has_archive' => false,
-		'supports' => array('title', 'editor', 'thumbnail')
+		'supports' => array('title', 'editor', 'thumbnail'),
+		'taxonomies' => array('category', 'post_tag')
 	) );
 }
 
