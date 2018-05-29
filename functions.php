@@ -202,3 +202,14 @@ function rewrite_flush() {
 }
 
 add_action('after_switch_theme', 'rewrite_flush');
+
+// Unregister widgets
+
+function unregister_widgets() {
+	unregister_widget('WP_Widget_Archives');
+	unregister_widget('WP_Widget_Calendar');
+	unregister_widget('WP_Widget_Recent_Comments');
+	unregister_widget('WP_Widget_Recent_Posts');
+}
+
+add_action('widgets_init', 'unregister_widgets');
