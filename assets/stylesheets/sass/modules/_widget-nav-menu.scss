@@ -9,6 +9,11 @@
                 border-radius: $borderRadius;
                 background-color: $blue;
                 color: white;
+
+                &:hover {
+                    opacity: 0.9;
+                    text-decoration: none;
+                }
             }
 
             &:not(:last-child) {
