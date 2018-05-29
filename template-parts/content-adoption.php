@@ -46,6 +46,11 @@
     </div>
     <hr>
     <div><?php the_content(); ?></div>
+    <hr>
+    <div style="width: 100%;">
+        <p>Please send us a message <a href="<?php echo get_permalink(24); ?>">here</a> to inquire about adopting <?php echo $name; ?>.</p>
+    </div>
+    <br>
     <?php if ( get_edit_post_link() ) : ?>
 		<footer class="entry-footer">
 			<?php
