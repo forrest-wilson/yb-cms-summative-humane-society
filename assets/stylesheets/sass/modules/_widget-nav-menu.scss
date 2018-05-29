@@ -1,0 +1,19 @@
+.widget_nav_menu {
+    .menu {
+        padding: 0px;
+
+        .menu-item {
+            a {
+                padding: 10px 15px;
+                display: block;
+                border-radius: $borderRadius;
+                background-color: $blue;
+                color: white;
+            }
+
+            &:not(:last-child) {
+                margin-bottom: 10px;
+            }
+        }
+    }
+}

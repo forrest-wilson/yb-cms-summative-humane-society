@@ -72,6 +72,20 @@ blockquote {
 .widget_search .search-form label {
   width: 100%; }
 
+.widget:last-child {
+  margin-bottom: 0px; }
+
+.widget_nav_menu .menu {
+  padding: 0px; }
+  .widget_nav_menu .menu .menu-item a {
+    padding: 10px 15px;
+    display: block;
+    border-radius: 5px;
+    background-color: #014282;
+    color: white; }
+  .widget_nav_menu .menu .menu-item:not(:last-child) {
+    margin-bottom: 10px; }
+
 .site-footer .site-info {
   padding: 50px 0;
   background-color: #014282;
