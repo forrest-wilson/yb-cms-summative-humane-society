@@ -44,7 +44,12 @@
             </div>
             <hr>
 
-        <?php endwhile; wp_reset_query(); ?>
+        <?php endwhile; ?>
+
+        <div class="col-sm-12">
+            <?php next_posts_link( 'Older' ); ?>
+            <?php previous_posts_link( 'Newer' ); ?>
+        </div>
 
     <?php else : ?>
 
@@ -54,6 +59,8 @@
         </div>
 
     <?php endif; ?>
+
+    <?php wp_reset_query(); ?>
 
     <?php if ( get_edit_post_link() ) : ?>
 		<footer class="entry-footer">

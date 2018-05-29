@@ -45,6 +45,8 @@
 			<h3><?php echo bloginfo('description'); ?></h3>
 		<?php elseif (is_search()) : ?>
 			<h1><?php printf( esc_html__( 'Search Results for: %s', 'humane-society' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
+		<?php elseif (is_archive()) : ?>
+			<h1><?php echo get_the_archive_title(); ?></h1>
 		<?php elseif (is_404()) : ?>
 			<h1><?php echo "404: Page Not Found"; ?></h1>
 		<?php else : ?>
