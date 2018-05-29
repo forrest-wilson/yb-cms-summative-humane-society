@@ -83,12 +83,21 @@ blockquote {
     border-radius: 5px;
     background-color: #014282;
     color: white; }
+    .widget_nav_menu .menu .menu-item a:hover {
+      opacity: 0.9;
+      text-decoration: none; }
   .widget_nav_menu .menu .menu-item:not(:last-child) {
     margin-bottom: 10px; }
+
+.site-footer > * {
+  text-align: center; }
 
 .site-footer .site-info {
   padding: 50px 0;
   background-color: #014282;
+  color: white; }
+
+.site-footer a {
   color: white; }
 
 .hentry:not(:last-child) {
