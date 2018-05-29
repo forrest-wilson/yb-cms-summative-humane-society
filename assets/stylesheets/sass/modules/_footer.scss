@@ -1,9 +1,17 @@
 //**** Footer Styles ****//
 
 .site-footer {
+    & > * {
+        text-align: center;
+    }
+
     .site-info {
         padding: 50px 0;
         background-color: $blue;
+        color: white;
+    }
+
+    a {
         color: white;
     }
 }

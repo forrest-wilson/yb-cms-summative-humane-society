@@ -27,6 +27,8 @@
 					/* translators: 1: Theme name, 2: Theme author. */
 					printf( esc_html__( 'Theme: %1$s by %2$s.', 'humane-society' ), 'humane-society', '<a href="https://forrest-wilson.com" target="_blank">Forrest Wilson-Jennings</a>' );
 					?>
+
+				<p><a href="<?php echo wp_login_url(); ?>">Go to admin</a></p>
 			</div>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
