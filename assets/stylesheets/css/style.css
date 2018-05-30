@@ -170,4 +170,12 @@ blockquote {
   .success-message p {
     margin-bottom: 0px; }
 
+.btn-primary {
+  background-color: #014282;
+  border-color: #014282; }
+  .btn-primary:hover {
+    opacity: 0.9;
+    background-color: #014282;
+    border-color: #014282; }
+
 /*# sourceMappingURL=style.css.map */
