@@ -130,6 +130,7 @@ function humane_society_scripts() {
 
 	// Custom CSS Enqueueing
 	wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/node_modules/bootstrap/dist/css/bootstrap.min.css', array(), '4.1.1' );
+	wp_enqueue_style( 'font-awesome', get_template_directory_uri() . '/node_modules/font-awesome/css/font-awesome.min.css', array(), '4.7.0' );
 	wp_enqueue_style( 'custom', get_template_directory_uri() . '/assets/stylesheets/css/style.css', array(), '1.0.0' );
 
 	// Custom JS Enqueueing
@@ -215,3 +216,31 @@ function unregister_widgets() {
 }
 
 add_action('widgets_init', 'unregister_widgets');
+
+function validate($data) {
+	$data = trim($data);
+	$data = stripslashes($data);
+	$data = htmlspecialchars($data);
+	return $data;
+}
+
+function donation_submission() {
+	if ($_POST['donation']) :
+		global $wpdb;
+		$table_name = 'hs_donations';
+
+		$name = validate($_POST['donation_name']);
+		$email = validate($_POST['donation_email']);
+		$number = validate($_POST['donation_phone']);
+		$donation = validate($_POST['donation_amount']);
+
+		$wpdb->insert($table_name, array(
+			'name' => $name,
+			'email' => $email,
+			'phone_number' => $number,
+			'amount' => $donation
+		));
+	endif;
+}
+
+add_action('init', 'donation_submission');
