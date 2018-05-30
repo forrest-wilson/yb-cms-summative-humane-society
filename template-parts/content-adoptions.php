@@ -47,8 +47,8 @@
         <?php endwhile; ?>
 
         <div class="col-sm-12">
-            <?php next_posts_link( 'Older' ); ?>
             <?php previous_posts_link( 'Newer' ); ?>
+            <?php next_posts_link( 'Older' ); ?>
         </div>
 
     <?php else : ?>
