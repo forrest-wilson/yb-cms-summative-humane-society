@@ -1,0 +1,10 @@
+.success-message {
+    padding: 15px 20px;
+    border: 10px solid limegreen;
+    background-color: lightgreen;
+    border-radius: $borderRadius;
+
+    p {
+        margin-bottom: 0px;
+    }
+}
