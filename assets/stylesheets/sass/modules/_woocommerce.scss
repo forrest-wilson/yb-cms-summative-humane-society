@@ -22,3 +22,9 @@
         }
     }
 }
+
+.woocommerce-column.col-1,
+.woocommerce-column.col-2 {
+    max-width: 100%;
+    padding: 0;
+}

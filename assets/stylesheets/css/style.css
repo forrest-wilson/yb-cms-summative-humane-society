@@ -162,6 +162,11 @@ blockquote {
 .woocommerce-checkout #customer_details .select2-selection__arrow {
   width: 20px; }
 
+.woocommerce-column.col-1,
+.woocommerce-column.col-2 {
+  max-width: 100%;
+  padding: 0; }
+
 .success-message {
   padding: 15px 20px;
   border: 10px solid limegreen;
