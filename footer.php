@@ -27,7 +27,7 @@
 					/* translators: 1: Theme name, 2: Theme author. */
 					printf( esc_html__( 'Theme: %1$s by %2$s.', 'humane-society' ), 'humane-society', '<a href="https://forrest-wilson.com" target="_blank">Forrest Wilson-Jennings</a>' );
 					?>
-
+				<p><i>This website is NOT affiliated with The Humane Society of NZ and is for educational pourposes only.</i></p>
 				<p><a href="<?php echo wp_login_url(); ?>">Go to admin</a></p>
 			</div>
 		</div><!-- .site-info -->
