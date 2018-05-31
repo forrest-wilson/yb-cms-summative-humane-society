@@ -3,3 +3,19 @@
 .hentry:not(:last-child) {
     border-bottom: $greyBorder;
 }
+
+.search-submit {
+    background-color: $blue !important;
+    color: white !important;
+    text-align: left !important;
+    padding: 10px 15px !important;
+    border-radius: $borderRadius !important;
+    font-size: 16px !important;
+    border: none !important;
+    line-height: 24px !important;
+
+    &:hover {
+        cursor: pointer;
+        opacity: 0.9;
+    }
+}
