@@ -21,7 +21,8 @@ get_header();
 				<div class="row">
 					<div class="col-sm-12 col-md-8 col-lg-9">
 						<?php
-							$loop = new WP_Query(array("post_type" => "dogs-for-adoption", "order_by" => "post_id", "order" => "ASC"));
+							$paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
+							$loop = new WP_Query(array('post_type' => 'dogs-for-adoption', 'order_by' => 'post_id', 'order' => 'ASC', 'paged' => $paged));
 							include(locate_template('template-parts/content-adoptions.php'));
 						?>
 					</div>
