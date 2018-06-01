@@ -175,7 +175,10 @@ function create_post_types() {
 	register_post_type( 'cats-for-adoption', array(
 		'labels' => array(
 			'name' => __( 'Cat Adoptions' ),
-			'singular_name' => __( 'Cat Adoption' )
+			'singular_name' => __( 'Cat Adoption' ),
+			'add_new' => __( 'Add New Cat Adoption' ),
+			'add_new_item' => __( 'Add New Cat Adoption' ),
+			'edit_item' => __( 'Edit Cat Adoption' )
 		),
 		'public' => true,
 		'has_archive' => true,
@@ -186,7 +189,10 @@ function create_post_types() {
 	register_post_type( 'dogs-for-adoption', array(
 		'labels' => array(
 			'name' => __( 'Dog Adoptions' ),
-			'singular_name' => __( 'Dog Adoption' )
+			'singular_name' => __( 'Dog Adoption' ),
+			'add_new' => __( 'Add New Dog Adoption' ),
+			'add_new_item' => __( 'Add New Dog Adoption' ),
+			'edit_item' => __( 'Edit Dog Adoption' )
 		),
 		'public' => true,
 		'has_archive' => true,
